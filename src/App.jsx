@@ -4,10 +4,12 @@ import Capabilities from './components/Capabilities'
 import HowItWorks from './components/HowItWorks'
 import Trust from './components/Trust'
 import CTA from './components/CTA'
+import ScrollManager from './components/ScrollManager'
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-200 selection:bg-indigo-500/30 selection:text-white">
+    <div className="min-h-screen bg-slate-950 text-slate-200 selection:bg-[var(--brand-primary,#6366f1)]/30 selection:text-white">
+      <ScrollManager />
       <Navbar />
       <main className="[scrollbar-color:rgba(99,102,241,0.4)_transparent]">
         <Hero />
